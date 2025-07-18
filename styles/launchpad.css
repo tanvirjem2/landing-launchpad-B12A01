@@ -1,5 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .raleway-normal {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+/* Shared Styles */
+
+.btn-primary {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 12px 36px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #4E47FF, #8A2BE2, #00C9A7);
+    background-size: 300%;
+    background-position: left;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 24px;
+    box-shadow: 0 5px 15px rgba(78, 71, 255, 0.4);
+    transition: background-position 0.5s ease, transform 0.3s ease, box-shadow 0.4s ease;
+}
+
+/* Hover glow + animated background */
+.btn-primary:hover {
+    background-position: right;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(138, 43, 226, 0.6);
+}
+
+/* Ripple Effect */
+.btn-primary::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: width 0.6s ease, height 0.6s ease, opacity 0.8s;
+}
+
+/* Trigger ripple on click */
+.btn-primary:active::after {
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+    transition: 0s;
+}
+
+/* Bounce on click */
+.btn-primary:active {
+    transform: scale(0.97);
+}
+
+
+/* header */
+
+header {
+    background-image: url('../Assets/Hero-bg.png');
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title {
+    color: #4E47FF;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 51px;
+}
+
+/* Banner */
+
+.banner {
+    text-align: center;
+    padding: 158px 266px 200px 268px;
+}
+
+.banner-title {
+    color: #252432;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 37px;
 }
