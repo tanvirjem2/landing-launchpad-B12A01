@@ -26,6 +26,7 @@
     background-position: left;
     cursor: pointer;
     text-decoration: none;
+    border-style: none;
     line-height: 24px;
     box-shadow: 0 5px 15px rgba(78, 71, 255, 0.4);
     transition: background-position 0.5s ease, transform 0.3s ease, box-shadow 0.4s ease;
@@ -100,4 +101,36 @@ nav {
     font-weight: 700;
     line-height: normal;
     margin-bottom: 37px;
+}
+
+/* main */
+
+main {
+    background-color: #F5F8FF;
+    padding-top: 116px;
+}
+
+/* Action */
+
+.action-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 48px;
+}
+
+.action-title {
+    color: #252432;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 23px;
+}
+
+.action-description {
+    color: rgba(37, 36, 50, 0.50);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 23px;
 }
