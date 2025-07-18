@@ -171,3 +171,66 @@ main {
     font-weight: 400;
     line-height: normal;
 }
+
+/* Review Section */
+
+.review-section-title {
+    color: #252432;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 137px;
+    margin-bottom: 50px;
+}
+
+.user-reviews {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.review {
+    border-radius: 14px;
+    border: var(--sds-size-stroke-border) solid #F2EDED;
+    background: rgba(255, 255, 255, 0.50);
+    padding: 24px;
+    width: 100%;
+}
+
+.rating {
+    margin-bottom: 24px;
+}
+
+.review-title {
+    margin-bottom: 8px;
+}
+
+.review-description {
+    margin-bottom: 24px;
+}
+
+/* Focus */
+
+.focus-section {
+    text-align: center;
+    border-radius: 14px;
+    background: #FFF;
+}
+
+.focus-title {
+    margin-top: 208px;
+    color: #000;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.focus-description {
+    color: rgba(37, 36, 50, 0.50);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
